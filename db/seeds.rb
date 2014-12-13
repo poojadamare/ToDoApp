@@ -5,3 +5,6 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+  Task.create(:action => 'To deploy the application')
+  Task.create(:action => 'To showcase the application')
+  Task.create(:action => 'To be happy' , :is_completed => true )
