@@ -1,0 +1,23 @@
+<h1>List of Activities</h1>
+<table border="1">
+  <tr>
+    <th> S.no.</th>
+    <th>Activity</th>
+    <th>Completed?</th>
+  </tr>
+
+  <% @tasks.each do |task| %>
+    <tr>
+      <td>
+        <%= task.id %>
+      </td>
+      <td>
+        <%= task.action %>
+      </td>
+      <td>
+        <%= task.is_completed %>
+      </td>
+    </tr>
+  <%end%>
+
+</table>
